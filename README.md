@@ -42,11 +42,11 @@ BM-By-Saba/
 
 
 ![BM By Saba Screenshot](screenshots/homepage1.png)
-![BM By Saba Screenshot](screenshots/home%20page2.png)
+![BM By Saba Screenshot](screenshots/homepage2.png)
 ![BM By Saba Screenshot](screenshots/lipstiick.png)
 
 
-git clone https://github.com/YOUR-USERNAME/BM-By-Saba.git
+git clone https://github.com/saba97/BM-By-Saba.git
 
 ## 📃 License
 This project is licensed under the MIT License. See the LICENSE file for details
