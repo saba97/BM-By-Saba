@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="https://img.icons8.com/fluency/96/lipstick.png" type="image/png">
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS + Popper -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>BM By Saba</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>BM By Saba</h1>
+     <nav>
+  <ul class="nav-links">
+    <li><a href="#" onclick="openPopupUnderTone() ; return false;">Undertone</a></li>
+    <li><a href="#" onclick="openPopupSkin() ; return false;">SkinType</a></li>
+     <li><a href="#" onclick="openPopupFoundation() ; return false;">Foundation</a></li>
+     <li><a href="#" onclick="openPopupLipstick() ; return false;">Lipstick</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+  </header>
+
+  <br>
+  <br>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="fade-in">
+    <h2>Contact</h2>
+    
+    
+    </section>
+    <div id="underToneOverlay" class="popupOverlay fade-in" onclick="closePopupUnderTone()"></div>
+<div id="underToneBox" class="popup-box">
+  <button class="close-btn" onclick="closePopupUnderTone()">&times;</button>
+  <section id="undertone-quiz" class="fade-in">
+  <h2>Find Your Undertone</h2>
+  <form id="quizForm">
+    <label>What color are the veins on your wrist?</label>
+    <select name="veins">
+      <option value="blue">Blue or Purple</option>
+      <option value="green">Green</option>
+      <option value="both">A mix of both</option>
+    </select>
+
+    <label>Which jewelry looks better on you?</label>
+    <select name="jewelry">
+      <option value="silver">Silver</option>
+      <option value="gold">Gold</option>
+      <option value="both">Both look good</option>
+    </select>
+
+    <label>How does your skin react to sunlight?</label>
+    <select name="sunReaction">
+      <option value="burn">It burns and turns red</option>
+      <option value="tan">It tans easily</option>
+      <option value="both">Sometimes burns, sometimes tans</option>
+    </select>
+
+    <button type="submit">Analyze Undertone</button>
+  </form>
+
+  <div id="result" style="margin-top:20px;"></div>
+</section>
+</div>
+<!-- Skin Type Section -->
+  
+   <div id="skinTypeOverlay" class="popupOverlay" onclick="closePopupSkin()"></div>
+<div id="skinTypeBox" class="popup-box">
+  <button class="close-btn" onclick="closePopupSkin()">&times;</button>
+  <!-- دکمه بستن -->
+  <section class="skin-type-test fade-in">
+  <h2>What's your skin type?</h2>
+  <form id="skinTest">
+    <div class="question">
+      <p>1. How does your skin feel after washing it with a cleanser?</p>
+      <label><input type="radio" name="q1" value="dry"> Tight and flaky</label>
+      <label><input type="radio" name="q1" value="oily"> Greasy or shiny</label>
+      <label><input type="radio" name="q1" value="combo"> Oily in some areas, dry in others</label>
+      <label><input type="radio" name="q1" value="normal"> Comfortable and balanced</label>
+    </div>
+
+    <div class="question">
+      <p>2. How often do you get acne or pimples?</p>
+      <label><input type="radio" name="q2" value="oily"> Often, especially on the T-zone</label>
+      <label><input type="radio" name="q2" value="combo"> Sometimes in specific areas</label>
+      <label><input type="radio" name="q2" value="dry"> Rarely, but skin may feel rough</label>
+      <label><input type="radio" name="q2" value="normal"> Occasionally</label>
+    </div>
+
+    <div class="question">
+      <p>3. How does your skin look by midday?</p>
+      <label><input type="radio" name="q3" value="oily"> Shiny and greasy</label>
+      <label><input type="radio" name="q3" value="dry"> Dry or dull</label>
+      <label><input type="radio" name="q3" value="combo"> Shiny T-zone, dry cheeks</label>
+      <label><input type="radio" name="q3" value="normal"> Still looks fresh</label>
+    </div>
+
+    <button type="submit">See My Skin Type</button>
+  </form>
+
+  <div id="skinResult"></div>
+</section>
+</div>
+  <!-- Foundation Section -->
+
+
+   
+   <div id="foundationOverlay" class="popupOverlay fade-in" onclick="closePopupUnderTone()"></div>
+<div id="foundationBox" class="popup-box">
+  <button class="close-btn" onclick="closePopupFoundation()">&times;</button>
+
+
+  <section id="foundation" class="fade-in">
+  <h2>Foundation Matching</h2>
+  <br>
+  <form class="foundation-form">
+    <label for="undertone">Your undertone:</label>
+    <select id="undertone">
+      <option value="cool">Cool</option>
+      <option value="warm">Warm</option>
+      <option value="neutral">Neutral</option>
+    </select>
+
+    <label for="shade">Choose your shade:</label>
+<div class="custom-select">
+  <div class="selected-option">Select a shade</div>
+  <div class="options">
+    <div class="option" data-shade="Natural Beige" >
+      <span class="color-dot" style="background-color: #f5d3b3;"></span>
+      Natural Beige
+    </div>
+    <div class="option" data-shade="Warm Sand">
+      <span class="color-dot" style="background-color: #e0b29b;"></span>
+      Warm Sand
+    </div>
+    <div class="option" data-shade="Honey Bronze">
+      <span class="color-dot" style="background-color: #d4a17a;"></span>
+      Honey Bronze
+    </div>
+
+    <div class="option" data-shade="Porcelain">
+  <span class="color-dot" style="background-color: #fce3d0;"></span>
+  Porcelain
+</div>
+<div class="option" data-shade="Fair Ivory">
+  <span class="color-dot" style="background-color: #f8d4b9;"></span>
+  Fair Ivory
+</div>
+<div class="option" data-shade="Light Beige">
+  <span class="color-dot" style="background-color: #f2c29d;"></span>
+  Light Beige
+</div>
+<div class="option" data-shade="Warm Sand">
+  <span class="color-dot" style="background-color: #e0a47a;"></span>
+  Warm Sand
+</div>
+
+<div class="option" data-shade="Caramel">
+  <span class="color-dot" style="background-color: #c48a6a;"></span>
+  Caramel
+</div>
+<div class="option" data-shade="Toffee">
+  <span class="color-dot" style="background-color: #a86b4c;"></span>
+  Toffee
+</div>
+<div class="option" data-shade="Mocha">
+  <span class="color-dot" style="background-color: #8b5e3c;"></span>
+  Mocha
+</div>
+<div class="option" data-shade="Deep Cocoa">
+  <span class="color-dot" style="background-color: #5a3b24;"></span>
+  Deep Cocoa
+</div>
+<div class="option" data-shade="Espresso">
+  <span class="color-dot" style="background-color: #3d2c1e;"></span>
+  Espresso
+</div>
+  </div>
+</div>
+
+    <label for="skinType">Your skin type:</label>
+    <select id="skinType">
+      <option value="dry">Dry</option>
+      <option value="oily">Oily</option>
+      <option value="combination">Combination</option>
+      <option value="sensitive">Sensitive</option>
+    </select>
+
+    <button type="submit">See Match</button>
+  </form>
+</section>
+</div>
+
+<!-----------LipStick---------------->
+
+<!---------EyeColor---------->
+  
+  <div id="liipstickOverlay" class="popupOverlay fade-in" onclick="closePopupLipstick()"></div>
+  <div id="lipstickBox" class="popup-box">
+  <button class="close-btn" onclick="closePopupLipstick()">&times;</button>
+  <div class="makeup-section fade-in">
+    <h2>LipStick Matching</h2>
+    <br>
+  <div class="eye-color-section">
+  <h3 class="section-title">Please Select Your EyeColor👁️</h3>
+  <div class="eye-colors">
+    <label>
+      <input type="radio" name="eyeColor" value="brown">
+      <span class="color-circle" style="background-color: #5C4033"></span>
+      <p>brown</p>
+    </label>
+    <label>
+      <input type="radio" name="eyeColor" value="hazel">
+      <span class="color-circle" style="background-color: #A47149"></span>
+      <p>Honey</p>
+    </label>
+    <label>
+      <input type="radio" name="eyeColor" value="greenblue">
+      <span class="color-circle" style="background-color: #3D9C9C"></span>
+      <p>Greenblue</p>
+    </label>
+    <label>
+      <input type="radio" name="eyeColor" value="blue">
+      <span class="color-circle" style="background-color: #5DADE2"></span>
+      <p>Blue</p>
+    </label>
+    <label>
+      <input type="radio" name="eyeColor" value="green">
+      <span class="color-circle" style="background-color: #50C878"></span>
+      <p>Green</p>
+    </label>
+    <label>
+      <input type="radio" name="eyeColor" value="gray">
+      <span class="color-circle" style="background-color: #B2BABB"></span>
+      <p>Gray</p>
+    </label>
+  </div>
+</div>
+<!---------Wear Color---------->
+  <br>
+  
+<div class="section">
+  <h3 class="section-title">Dress Color</h3>
+  <div class="color-options" id="dress-colors">
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="white">
+      <span style="background-color: white;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="black">
+      <span style="background-color: black;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="red">
+      <span style="background-color: red;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="pink">
+      <span style="background-color: pink;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="blue">
+      <span style="background-color: blue;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="green">
+      <span style="background-color: green;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="yellow">
+      <span style="background-color: yellow;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="beige">
+      <span style="background-color: beige;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="purple">
+      <span style="background-color: purple;"></span>
+    </label>
+    <label class="color-circle">
+      <input type="radio" name="dressColor" value="gray">
+      <span style="background-color: gray;"></span>
+    </label>
+  </div>
+</div>
+<!--------foundation shade--------->
+<br>
+<h3 class="section-title">Foundation Shade</h3>
+  <div class="color-options" id="foundationColors">
+    <div class="color-circle" data-color="Porcelain" style="background-color: #fbe8e2;" title="Porcelain"></div>
+    <div class="color-circle" data-color="Ivory" style="background-color: #f3d7ca;" title="Ivory"></div>
+    <div class="color-circle" data-color="Beige" style="background-color: #eac2a0;" title="Beige"></div>
+    <div class="color-circle" data-color="Honey" style="background-color: #d79f79;" title="Honey"></div>
+    <div class="color-circle" data-color="Caramel" style="background-color: #b87d53;" title="Caramel"></div>
+    <div class="color-circle" data-color="Mocha" style="background-color: #6f4f3e;" title="Mocha"></div>
+  </div> 
+<br>
+  <!-- دکمه پیشنهاد رژلب -->
+<button class="lipstick-btn" onclick="showSuggestion()">Suggest Lipstick</button>
+</div>
+<!-- Overlay و Popup -->
+<div class="overlay" id="lipstickOverlay">
+  <div class="lipstick-popup">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <div class="lip-color" id="lipColorCircle"></div>
+    <h2>Hello beauty! 💋</h2>
+    <p id="popupText">This shade looks amazing on you!</p>
+  </div>
+</div>
+
+
+</div>
+    
+    
+    <section class="contact-section">
+  <h2 class="section-title">Contact Us</h2>
+  <form class="contact-form" >
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+   <br>
+   <br>
+  <footer class="site-footer">
+  <div class="footer-top">
+    <h2>BM By Saba</h2>
+    <p>Discover your unique glow ✨</p>
+  </div>
+
+  <div class="footer-links">
+    <div>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#test">Skin Test</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Get in Touch</h3>
+      <p>info@bmbeauty.com</p>
+      <p>+1 234 567 890</p>
+      <div class="social-icons">
+        <a href="#"><span>💄</span></a>
+        <a href="#"><span>💋</span></a>
+        <a href="#"><span>📸</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 BM By Saba | Made with 💅 and ☕ by Saba</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
