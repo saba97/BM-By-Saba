@@ -16,11 +16,34 @@ A stylish and responsive beauty website built with HTML, CSS, and JavaScript tha
 - 📸 **Gallery Section**: Showcase of beauty images and brand vibes.
 - ✨ **Animated Elements**: Scroll effects and interactive components.
 
+## 📸 Screenshots
+
+
+
+![BM By Saba Screenshot](screenshots/homepage1.png)
+![BM By Saba Screenshot](screenshots/homepage2.png)
+![BM By Saba Screenshot](screenshots/lipstiick.png)
+
+
+
 ## 🔧 Tech Stack
 
 - HTML5
 - CSS3 (custom styling & responsive layout)
 - Vanilla JavaScript (forms, modals, logic handling)
+
+
+git clone https://github.com/saba97/BM-By-Saba.git
+
+## 📃 License
+This project is licensed under the MIT License. See the LICENSE file for details
+
+##  💌 Contact
+
+👩‍💻 Made with ❤️ by Saba Vafaie
+Linkdin : Saba Vafaei
+Email: vafaiesaba@gmail.com
+
 
 ## 📂 Folder Structure
 
@@ -36,24 +59,4 @@ BM-By-Saba/
 └── README.md
 │   
 └── LICENCE
-
-## 📸 Screenshots
-
-
-
-![BM By Saba Screenshot](screenshots/homepage1.png)
-![BM By Saba Screenshot](screenshots/homepage2.png)
-![BM By Saba Screenshot](screenshots/lipstiick.png)
-
-
-git clone https://github.com/saba97/BM-By-Saba.git
-
-## 📃 License
-This project is licensed under the MIT License. See the LICENSE file for details
-
-##  💌 Contact
-
-👩‍💻 Made with ❤️ by Saba Vafaie
-Linkdin : Saba Vafaei
-Email: vafaiesaba@gmail.com
 
