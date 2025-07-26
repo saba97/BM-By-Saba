@@ -37,9 +37,14 @@ BM-By-Saba/
 │   
 └── LICENCE
 
-![Home Page1](images/homepage%201.png)
-![Home Page2](images/home%20page%202.png)
-![Lipstick Quiz](images/lipstiick.png)
+## 📸 Screenshots
+
+
+
+![BM By Saba Screenshot](screenshots/homepage1.png)
+![BM By Saba Screenshot](screenshots/home%20page2.png)
+![BM By Saba Screenshot](screenshots/lipstiick.png)
+
 
 git clone https://github.com/YOUR-USERNAME/BM-By-Saba.git
 
