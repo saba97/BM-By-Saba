@@ -1194,6 +1194,8 @@ article img {
     display: flex; /* موقع کلیک نمایش داده میشه */
   }
   .hamburger {
+    
+  display: flex;
   cursor: pointer;
   width: 30px;
   height: 22px;
