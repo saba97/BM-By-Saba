@@ -22,6 +22,11 @@ optionItems.forEach((item) => {
   });
 });
 
+function closeMenu() {
+  navLinks.classList.remove('active'); 
+  hamburger.classList.remove('active');
+}
+
 document.getElementById("quizForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -271,18 +276,30 @@ document.getElementById('closePopup').addEventListener('click', () => {
 function openPopupUnderTone() {
   document.getElementById("underToneOverlay").style.display = "block";
   document.getElementById("underToneBox").style.display = "block";
-   closeHamburgerMenu();
+   
+ 
+
+  document.querySelector('.nav-links').classList.remove('open');
+  document.querySelector('.hamburger').classList.remove('active');
+   closeMenu()
+
 }
 
 function closePopupUnderTone() {
   document.getElementById("underToneOverlay").style.display = "none";
   document.getElementById("underToneBox").style.display = "none";
+
+   document.querySelector('.hamburger').classList.remove('active');
 }
+
 //skintype
 function openPopupSkin() {
   document.getElementById("skinTypeOverlay").style.display = "block";
   document.getElementById("skinTypeBox").style.display = "block";
-   closeHamburgerMenu();
+  
+  document.querySelector('.nav-links').classList.remove('open');
+  document.querySelector('.hamburger').classList.remove('active');
+   closeMenu()
 }
 
 function closePopupSkin() {
@@ -295,7 +312,10 @@ function closePopupSkin() {
 function openPopupFoundation() {
   document.getElementById("foundationOverlay").style.display = "block";
   document.getElementById("foundationBox").style.display = "block";
-   closeHamburgerMenu();
+  
+  document.querySelector('.nav-links').classList.remove('open');
+  document.querySelector('.hamburger').classList.remove('active');
+   closeMenu()
 }
 
 function closePopupFoundation() {
@@ -308,7 +328,10 @@ function closePopupFoundation() {
 function openPopupLipstick() {
   document.getElementById("liipstickOverlay").style.display = "block";
   document.getElementById("lipstickBox").style.display = "block";
-   closeHamburgerMenu();
+  
+  document.querySelector('.nav-links').classList.remove('open');
+  document.querySelector('.hamburger').classList.remove('active');
+   closeMenu()
 }
 
 function closePopupLipstick() {
@@ -330,6 +353,4 @@ function showIntroOverlay() {
     document.getElementById('introOverlay').style.display = 'none';
   }
 
-  function closeHamburgerMenu() {
-  navLinks.classList.remove("active");
-}
+  
